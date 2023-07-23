@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Daisy mam</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Daisy mam</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-bg': "url('./images/yellow-bg.jpg')"
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
 <body>
@@ -63,20 +74,145 @@
         </div>
         <!-- hero section -->
         <div>
-            <div class="hero min-h-screen"
-                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero min-h-[calc(100vh-92px)] bg-hero-bg">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
                         <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                             exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn">SHOP NOW</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- huge collection -->
+    <section class="max-w-screen-xl mx-auto px-8 py-5 my-10 md:px-16 lg:px-24">
+        <!-- huge heading -->
+        <div class="text-center">
+            <h1 class="text-2xl md:text-4xl lg:text-6xl mb-5">Huge Collection</h1>
+            <p class="text-xl">Browse from a various collections</p>
+        </div>
+        <!-- container -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+            <!-- card 1 -->
+            <div class="card card-compact  bg-base-100 shadow-xl">
+                <figure><img src="./images/shoes.avif" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl">Shoes!</h2>
+                    <p class="text-base">At DaisyMan, we believe that style is a reflection of your unique personality
+                        and our mission is to provide you with a diverse and trendy collection</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 1 -->
+            <div class="card card-compact  bg-base-100 shadow-xl">
+                <figure><img src="./images/shoes.avif" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl">Shoes!</h2>
+                    <p class="text-base">At DaisyMan, we believe that style is a reflection of your unique personality
+                        and our mission is to provide you with a diverse and trendy collection</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 1 -->
+            <div class="card card-compact  bg-base-100 shadow-xl">
+                <figure><img src="./images/shoes.avif" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl">Shoes!</h2>
+                    <p class="text-base">At DaisyMan, we believe that style is a reflection of your unique personality
+                        and our mission is to provide you with a diverse and trendy collection</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- easy purchase section -->
+    <section class="max-w-screen-xl mx-auto px-8 py-5 my-10 md:px-16 lg:px-24">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <div class="flex-1">
+                <h1 class="text-2xl md:text-4xl lg:text-6xl mb-5">Easy Purchase</h1>
+                <p class="text-xl">we believe that style is a reflection of your unique personality and our mission is
+                    to provide you
+                    with
+                    diverse and trendy collection. Our mission is to provide you with a diverse and trendy collection
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="./images/easy-purchase.avif" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- top products section -->
+    <section class="max-w-screen-xl mx-auto px-8 py-5 my-10 md:px-16 lg:px-24">
+        <!-- top products heading -->
+        <div class="text-center">
+            <h1 class="text-2xl md:text-4xl lg:text-6xl mb-5">Top Products</h1>
+            <p class="text-xl">Browse from a various collections</p>
+            <!-- top card container -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+                <!-- card 1 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img
+                            src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Formal Shirt</h2>
+                        <p class="text-base">Our mission is to provide you with a diverse and trendy collection.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img
+                            src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Formal Shirt</h2>
+                        <p class="text-base">Our mission is to provide you with a diverse and trendy collection.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img
+                            src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Formal Shirt</h2>
+                        <p class="text-base">Our mission is to provide you with a diverse and trendy collection.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img
+                            src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Formal Shirt</h2>
+                        <p class="text-base">Our mission is to provide you with a diverse and trendy collection.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
